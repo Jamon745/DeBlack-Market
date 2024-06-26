@@ -30,30 +30,30 @@ const ProductData = [
       {
             id: 7,
             img: Img7,
-            title: "Hp Laptop",
+            title: "Basmati Rice",
             rating: 4.8,
             color: "Grey",
-             price: "N150,000",
-            aosDelay: "800",
+             price: "N1,000",
+            aosDelay: "500",
             description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
       },
       {
             id: 8,
             img: Img8,
-            title: "Hp Laptop",
+            title: "Delicious Pizza",
             rating: 4.8,
-            color: "Grey",
-             price: "N150,000",
+            color: "creame",
+             price: "N1,500",
             aosDelay: "800",
             description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
       },
       {
             id: 9,
             img: Img9,
-            title: "Hp Laptop",
+            title: "Fried Chicken",
             rating: 4.8,
-            color: "Grey",
-             price: "N150,000",
+            color: "fried",
+             price: "N1,000",
             aosDelay: "800",
             description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
       },
@@ -63,7 +63,7 @@ const ProductData = [
             title: "iPhone 15",
             rating: 4.5,
             color: "Grey",
-            price: "N400,000",
+            price: "N200,000",
             aosDelay: "0",
             description: "Explore our Neatly Used iPhone, a premium smartphone that combines sleek design with dependable performance. This iPhone has been gently used and meticulously maintained, offering an exceptional user experience at a reduced price."
       },
