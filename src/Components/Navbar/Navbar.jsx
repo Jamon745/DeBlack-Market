@@ -62,25 +62,36 @@ const Navbar = ({ handleOrderPopup }) => {
       <div className="flex justify-center flex-end">
         <ul className="sm:flex hidden items-center gap-4">
           <li>
-            <a className='px-2 hover:translate-x-1 duration-300' href="/">Home</a>
+            <a className='px-2 hover:translate-x-1 duration-300 hover:text-primary' href="/">Home</a>
+          </li>
+          <li>
+          <a href={"/products"} className="flex items-center hover:text-primary gap-2 py-2">
+              Products
+            </a>
+          </li>
+          <li>
+          <a href={"#"} className="flex items-center hover:text-primary gap-2 py-2">
+              Food & Beverages
+            </a>
           </li>
 
           <li className="group relative cursor-pointer">
-            <a href={"/products"} className="flex items-center gap-2 py-2">
-              Products
+          <div className="flex items-center gap-2 py-2">
+              Categories
               <span>
                 <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
               </span>
-            </a>
-
+            </div>
             <div className="absolute z-10 hidden group-hover:block rounded-md w-48 bg-white p-2 text-black shadow-md">
               {NavData.map((data) => (
-                <a key={data.id} href={data.Link} className="block p-2 rounded-md hover:bg-primary-200">
+                <a key={data.id} href={data.Link} className="block p-2 rounded-md hover:bg-primary hover:text-white hover:text-center">
                   {data.name}
                 </a>
               ))}
             </div>
           </li>
+
+          
 
           {/* Dropdown and some link */}
           <li className="group relative cursor-pointer">
@@ -93,7 +104,7 @@ const Navbar = ({ handleOrderPopup }) => {
 
             <div className="absolute z-10 hidden group-hover:block rounded-md w-48 bg-white p-2 text-black shadow-md">
               {DropdownLinks.map((data) => (
-                <a key={data.id} href={data.Link} className="block p-2 rounded-md hover:bg-primary-200">
+                <a key={data.id} href={data.Link} className="block p-2 rounded-md hover:bg-primary-200 hover:bg-primary hover:text-white hover:text-center">
                   {data.name}
                 </a>
               ))}
