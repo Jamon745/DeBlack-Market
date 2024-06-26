@@ -5,9 +5,58 @@ import Img3 from '../../assets/Men/Trending/Trendy-white-polo.jpg'
 import Img4 from '../../assets/Women/Trending/Trendy-bag.jpg'
 import Img5 from '../../assets/Cars/TrendyCar/Car5.jpg'
 import Img6 from '../../assets/Laptops/Laptop1.jpg'
+import Img7 from '../../assets/Foods/plate-of-food.jpg'
+import Img8 from '../../assets/Foods/pizza.jpg'
+import Img9 from '../../assets/Foods/Yummy-chicken.jpg'
+import Img10 from '../../assets/Cars/car1.jpg'
+import Img11 from '../../assets/Cars/car2.jpg'
+import Img12 from '../../assets/Cars/car3.jpg'
+import Img13 from '../../assets/Cars/car4.jpg'
+import Img14 from '../../assets/Products/black-opium-perfume.jpg'
+import Img15 from '../../assets/Products/brown-sneaker.jpg'
+import Img16 from '../../assets/Products/chanel-perfume.jpg'
+import Img17 from '../../assets/Products/chanel-perfume2.jpg'
+import Img18 from '../../assets/Products/gray-sneaker.jpg'
+import Img19 from '../../assets/Phones/iPhone1.jpg'
+import Img20 from '../../assets/Phones/phone3.jpg'
+import Img21 from '../../assets/Phones/phone4.jpg'
+import Img22 from '../../assets/Phones/phone5.jpg'
+import Img23 from '../../assets/Phones/phone6.jpg'
+import Img24 from '../../assets/Phones/phone7.jpg'
 
 
 const ProductData = [
+     
+      {
+            id: 7,
+            img: Img7,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 8,
+            img: Img8,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 9,
+            img: Img9,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
       {
             id: 1,
             img: Img1,
@@ -61,6 +110,155 @@ const ProductData = [
       {
             id: 6,
             img: Img6,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 10,
+            img: Img10,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 11,
+            img: Img11,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 12,
+            img: Img12,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 13,
+            img: Img13,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },{
+            id: 14,
+            img: Img14,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 15,
+            img: Img15,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 16,
+            img: Img16,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 17,
+            img: Img17,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 18,
+            img: Img18,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 19,
+            img: Img19,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 20,
+            img: Img20,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 21,
+            img: Img21,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 22,
+            img: Img22,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 23,
+            img: Img23,
+            title: "Hp Laptop",
+            rating: 4.8,
+            color: "Grey",
+             price: "N150,000",
+            aosDelay: "800",
+            description: "Discover our Neatly Used Laptop, a reliable and affordable choice for tech enthusiasts and professionals alike. This laptop has been gently used and well-maintained, offering excellent performance and functionality at a reduced price."
+      },
+      {
+            id: 24,
+            img: Img24,
             title: "Hp Laptop",
             rating: 4.8,
             color: "Grey",

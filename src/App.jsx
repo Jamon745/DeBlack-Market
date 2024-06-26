@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Hero from './Components/Hero/Hero';
+// import Hero from './Components/Hero/Hero';
 import Navbar from './Components/Navbar/Navbar';
 import Products from './Components/Products/Products';
 import TopProducts from './Components/TopProducts/TopProducts';
@@ -13,6 +13,7 @@ import Footer from './Components/Footer/Footer';
 import Popup from './Components/Popup/Popup';
 import Login from './Components/Account/Login';
 import SignUp from './Components/Account/SignUp';
+import Home from './Components/Home/Home';
 
 function App() {
   const [orderPopup, setOrderPopup] = useState(false); 
@@ -36,9 +37,10 @@ function App() {
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
           <Navbar handleOrderPopup={handleOrderPopup} />
       <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
+      {/* <Hero handleOrderPopup={handleOrderPopup} /> */}
       <Router>
         <Routes>
-          <Route path="/" element={<Hero handleOrderPopup={handleOrderPopup} />} />
+          <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/topProducts" element={<TopProducts handleOrderPopup={handleOrderPopup} />} />
           <Route path="/banner" element={<Banner />} />
@@ -49,7 +51,6 @@ function App() {
           <Route path='/signUp' element={<SignUp />}/>
         </Routes>
       </Router>
-      <Products />
       <TopProducts handleOrderPopup={handleOrderPopup} />
       <Testimonal />
       <Footer />

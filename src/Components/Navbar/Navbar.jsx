@@ -5,22 +5,10 @@ import { IoMdSearch } from 'react-icons/io';
 import DarkMode from './DarkMode';
 import {NavData} from './NavData'; 
 import {DropdownLinks} from './DropdownLinks'; 
-// import { useNavigate } from 'react-router-dom';
 
 
 
 const Navbar = ({ handleOrderPopup }) => {
-  // const navigate = useNavigate();
-
-  // const handleLogin = (e) => {
-  //   e.preventDefault();
-  //   navigate('/login');
-  // };
-
-  // const handleSignUp = (e) => {
-  //   e.preventDefault();
-  //   navigate('/signUp');
-  // };
 
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
@@ -70,7 +58,7 @@ const Navbar = ({ handleOrderPopup }) => {
             </a>
           </li>
           <li>
-          <a href={"#"} className="flex items-center hover:text-primary gap-2 py-2">
+          <a href={"/beverages"} className="flex items-center hover:text-primary gap-2 py-2">
               Food & Beverages
             </a>
           </li>
