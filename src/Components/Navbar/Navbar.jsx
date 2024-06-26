@@ -1,12 +1,27 @@
 import PropTypes from 'prop-types';
-import { FaCaretDown, FaShoppingCart } from "react-icons/fa";
-import Logo from "../../assets/logo.png";
-import { IoMdSearch } from "react-icons/io";
-import DarkMode from "./DarkMode";
-import  {NavData}  from "./NavData";
-import  {DropdownLinks}  from "./DropdownLinks";
+import { FaCaretDown, FaShoppingCart } from 'react-icons/fa';
+import Logo from '../../assets/logo.png';
+import { IoMdSearch } from 'react-icons/io';
+import DarkMode from './DarkMode';
+import {NavData} from './NavData'; 
+import {DropdownLinks} from './DropdownLinks'; 
+// import { useNavigate } from 'react-router-dom';
+
+
 
 const Navbar = ({ handleOrderPopup }) => {
+  // const navigate = useNavigate();
+
+  // const handleLogin = (e) => {
+  //   e.preventDefault();
+  //   navigate('/login');
+  // };
+
+  // const handleSignUp = (e) => {
+  //   e.preventDefault();
+  //   navigate('/signUp');
+  // };
+
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
       <div className="bg-primary-400 py-3 sm:py-0">
@@ -14,7 +29,7 @@ const Navbar = ({ handleOrderPopup }) => {
           <div>
             <a href="/" className="font-bold text-lg sm:text-3xl flex items-center gap-2">
               <img src={Logo} alt="Logo" className="w-12 uppercase" />
-              DeBlack <span className='text-primary'>Market</span> 
+              DeBlack <span className='text-primary'>Market</span>
             </a>
           </div>
           {/* Search bar */}
@@ -38,8 +53,6 @@ const Navbar = ({ handleOrderPopup }) => {
               <FaShoppingCart className="text-xl drop-shadow-sm cursor-pointer" />
             </button>
 
-           
-
             {/* Dark Mode Switch */}
             <DarkMode />
           </div>
@@ -47,11 +60,13 @@ const Navbar = ({ handleOrderPopup }) => {
       </div>
       {/* Lower Navbar */}
       <div className="flex justify-center flex-end">
-        <ul className="sm:flex hidden items-center  gap-4">
-          <a className='px-2 hover:translate-x-1 duration-300' href="/">Home</a>
+        <ul className="sm:flex hidden items-center gap-4">
+          <li>
+            <a className='px-2 hover:translate-x-1 duration-300' href="/">Home</a>
+          </li>
 
           <li className="group relative cursor-pointer">
-            <a href="#" className="flex items-center gap-2 py-2">
+            <a href={"/products"} className="flex items-center gap-2 py-2">
               Products
               <span>
                 <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
@@ -84,17 +99,20 @@ const Navbar = ({ handleOrderPopup }) => {
               ))}
             </div>
           </li>
-           {/* Login and Register buttons */}
-           <div className="flex gap-4">
-              <div className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white ml-20">Login</div>
-              <div className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white">Register</div>
-            </div>
+
+          {/* Login and Register buttons */}
+          <li className="flex gap-4">
+            <a href='/login' className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white ml-20">Login</a>
+            <a href='/signUp' className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white">Register</a>
+          </li>
         </ul>
       </div>
     </div>
   );
 };
+
 Navbar.propTypes = {
   handleOrderPopup: PropTypes.func.isRequired,
 };
+
 export default Navbar;

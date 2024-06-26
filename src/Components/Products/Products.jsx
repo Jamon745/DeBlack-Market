@@ -34,8 +34,8 @@ const Products = () => {
                       </div>
                     ))}
                   </div>
-                  <div data-aos="zoom-in" className="flex items-center text-center">
-                    <button className="bg-gradient-to-r from-primary to-gray-800 text-center text-white px-2 py-1 mt-10n rounded-md dark:text-white hover:text-white cursor-pointer">View All</button>
+                  <div data-aos="zoom-in" className="flex items-center text-center place-content-center">
+                    <button className="bg-gradient-to-r from-primary to-gray-800 text-center text-white px-2 py-1 mt-10n rounded-md dark:text-white hover:text-primary cursor-pointer">View All</button>
                   </div>
             </div>
       </div>

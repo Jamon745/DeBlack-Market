@@ -1,56 +1,61 @@
-// import './App.css'
 import { useEffect, useState } from 'react';
-import Hero from './Components/Hero/Hero'
-import Navbar from './Components/Navbar/Navbar'
-import Products from './Components/Products/Products'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
-import "aos/dist/aos.css"
+import 'aos/dist/aos.css';
+import Hero from './Components/Hero/Hero';
+import Navbar from './Components/Navbar/Navbar';
+import Products from './Components/Products/Products';
 import TopProducts from './Components/TopProducts/TopProducts';
 import Banner from './Components/Banner/Banner';
 import Subscibe from './Components/Subscribe/Subscibe';
 import Testimonal from './Components/Testimonials/Testimonal';
 import Footer from './Components/Footer/Footer';
 import Popup from './Components/Popup/Popup';
-import Login from './Components/SignUp/Login';
-
+import Login from './Components/Account/Login';
+import SignUp from './Components/Account/SignUp';
 
 function App() {
-  const [orderPopup, setOrderPopup] = useState("false");
+  const [orderPopup, setOrderPopup] = useState(false); 
 
   const handleOrderPopup = (e) => {
-    e.preventDefault()
-    setOrderPopup(!orderPopup)
-  }
+    e.preventDefault();
+    setOrderPopup(!orderPopup);
+  };
 
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({
       offset: 100,
       duration: 800,
-      easing: "ease-in-out",
-      delay: 100
-    })
-    AOS.refresh()
-  },[])
-
-
+      easing: 'ease-in-out',
+      delay: 100,
+    });
+    AOS.refresh();
+  }, []);
 
   return (
-    <>
-      <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
-        <Navbar handleOrderPopup={handleOrderPopup} />
-        <Hero handleOrderPopup={handleOrderPopup} />
-        <Products />
-        <TopProducts handleOrderPopup={handleOrderPopup} />
-        <Banner />
-        <Subscibe />
-        <Products />
-        <Testimonal />
-        <Footer />
-        <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup}/>
-        <Login/>
-      </div>
-    </>
-  )
+    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+          <Navbar handleOrderPopup={handleOrderPopup} />
+      <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Hero handleOrderPopup={handleOrderPopup} />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/topProducts" element={<TopProducts handleOrderPopup={handleOrderPopup} />} />
+          <Route path="/banner" element={<Banner />} />
+          <Route path="/subscribe" element={<Subscibe />} />
+          <Route path="/testimonials" element={<Testimonal />} />
+          <Route path="/footer" element={<Footer />} />
+          <Route path='/login' element={<Login />}/>
+          <Route path='/signUp' element={<SignUp />}/>
+        </Routes>
+      </Router>
+      <Products />
+      <TopProducts handleOrderPopup={handleOrderPopup} />
+      <Testimonal />
+      <Footer />
+    </div>
+    
+  );
 }
 
-export default App
+export default App;
