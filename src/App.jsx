@@ -11,6 +11,7 @@ import Subscibe from './Components/Subscribe/Subscibe';
 import Testimonal from './Components/Testimonials/Testimonal';
 import Footer from './Components/Footer/Footer';
 import Popup from './Components/Popup/Popup';
+import Login from './Components/SignUp/Login';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         <Testimonal />
         <Footer />
         <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup}/>
+        <Login/>
       </div>
     </>
   )
