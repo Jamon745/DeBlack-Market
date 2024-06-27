@@ -14,6 +14,7 @@ import Popup from './Components/Popup/Popup';
 import Login from './Components/Account/Login';
 import SignUp from './Components/Account/SignUp';
 import Home from './Components/Home/Home';
+import Foods from './Components/Foods/Foods';
 
 function App() {
   const [orderPopup, setOrderPopup] = useState(false); 
@@ -26,7 +27,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       offset: 100,
-      duration: 800,
+      duration: 500,
       easing: 'ease-in-out',
       delay: 100,
     });
@@ -49,6 +50,7 @@ function App() {
           <Route path="/footer" element={<Footer />} />
           <Route path='/login' element={<Login />}/>
           <Route path='/signUp' element={<SignUp />}/>
+          <Route path='/foods' element={<Foods handleOrderPopup={handleOrderPopup} />}/>
         </Routes>
       </Router>
       <TopProducts handleOrderPopup={handleOrderPopup} />

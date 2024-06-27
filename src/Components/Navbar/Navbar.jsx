@@ -58,7 +58,7 @@ const Navbar = ({ handleOrderPopup }) => {
             </a>
           </li>
           <li>
-          <a href={"/beverages"} className="flex items-center hover:text-primary gap-2 py-2">
+          <a href={"/foods"} className="flex items-center hover:text-primary gap-2 py-2">
               Food & Beverages
             </a>
           </li>
@@ -101,8 +101,8 @@ const Navbar = ({ handleOrderPopup }) => {
 
           {/* Login and Register buttons */}
           <li className="flex gap-4">
-            <a href='/login' className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white ml-20">Login</a>
-            <a href='/signUp' className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white">Register</a>
+            <a href='/Login' className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white ml-20">Login</a>
+            <a href='/SignUp' className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white">Register</a>
           </li>
         </ul>
       </div>
