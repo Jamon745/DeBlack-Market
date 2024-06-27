@@ -101,8 +101,8 @@ const Navbar = ({ handleOrderPopup }) => {
 
           {/* Login and Register buttons */}
           <li className="flex gap-4">
-            <a href='/Login' className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white ml-20">Login</a>
-            <a href='/SignUp' className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white">Register</a>
+            <a href={'/login'} className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white ml-20">Login</a>
+            <a href={'/signUp'} className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white">Register</a>
           </li>
         </ul>
       </div>

@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import Hero from './Components/Hero/Hero';
 import Navbar from './Components/Navbar/Navbar';
 import Products from './Components/Products/Products';
 import TopProducts from './Components/TopProducts/TopProducts';
@@ -29,7 +28,7 @@ function App() {
       offset: 100,
       duration: 500,
       easing: 'ease-in-out',
-      delay: 100,
+      delay: 50,
     });
     AOS.refresh();
   }, []);
@@ -38,7 +37,6 @@ function App() {
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
           <Navbar handleOrderPopup={handleOrderPopup} />
       <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
-      {/* <Hero handleOrderPopup={handleOrderPopup} /> */}
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

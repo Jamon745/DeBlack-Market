@@ -19,7 +19,7 @@ const Login = () => {
                   
                   <div className="flex items-center justify-between px-6">
                         <h2>Don&apos;t have account?</h2>
-                        <a href="/SignUp" className="text-blue-500">Register</a>
+                        <a href={"/signUp"} className="text-blue-500">Register</a>
                   </div>
             </div>
 
