@@ -1,9 +1,9 @@
-import Img1 from '../../assets/Phones/iPhone2.jpg'
-import Img2 from '../../assets/Foods/Bulgar.jpg'
-import Img3 from '../../assets/Men/Trending/Trendy-white-polo.jpg'
-import Img4 from '../../assets/Women/Trending/Trendy-bag.jpg'
-import Img5 from '../../assets/Cars/TrendyCar/Car5.jpg'
-import Img6 from '../../assets/Laptops/Laptop1.jpg'
+import Img1 from '../../../assets/Phones/iPhone2.jpg'
+import Img2 from '../../../assets/Foods/Bulgar.jpg'
+import Img3 from '../../../assets/Men/Trending/Trendy-white-polo.jpg'
+import Img4 from '../../../assets/Women/Trending/Trendy-bag.jpg'
+import Img5 from '../../../assets/Cars/TrendyCar/Car5.jpg'
+import Img6 from '../../../assets/Laptops/Laptop1.jpg'
 
 const TopSelling = [
       {

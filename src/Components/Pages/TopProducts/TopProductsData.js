@@ -1,9 +1,8 @@
-
-import Img1 from '../../assets/Cars/TopRated/Car1.png'
-import Img2 from '../../assets/Cars/TopRated/Car4.png'
+import Img1 from '../../../assets/Cars/TopRated/Car1.png'
+import Img2 from '../../../assets/Cars/TopRated/Car4.png'
 // import Img3 from '../../assets/Cars/TopRated/Car5.png'
-import Img4 from '../../assets/Cars/TopRated/Car6.png'
-import Img5 from '../../assets/Cars/TopRated/Car3.png'
+import Img4 from '../../../assets/Cars/TopRated/Car6.png'
+import Img5 from '../../../assets/Cars/TopRated/Car3.png'
 // import Img6 from '../../assets/Cars/TopRated/Car5.png'
 
 

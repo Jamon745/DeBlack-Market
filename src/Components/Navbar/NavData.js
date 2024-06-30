@@ -3,7 +3,7 @@ export const NavData = [
       {
             id: 3,
             name: "Cars",
-            Link: "/Cars"
+            Link: "/cars"
       },
       {
             id: 4,
@@ -13,23 +13,23 @@ export const NavData = [
       {
             id: 5,
             name: "Laptops",
-            Link: "/Laptops"
+            Link: "/laptops"
       },
       {
             id: 6,
             name: "Home Appliance",
-            Link: "/Appliance"
+            Link: "/appliance"
       },
      
       {
             id: 7,
             name: "Men's Wear",
-            Link: "/Men"
+            Link: "/men"
       },
       {
             id: 8,
             name: "Kids Wear",
-            Link: "/Kids"
+            Link: "/kids"
       },
       {
             id: 9,

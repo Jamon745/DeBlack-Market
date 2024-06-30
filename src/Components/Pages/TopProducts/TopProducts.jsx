@@ -1,5 +1,5 @@
 import { FaStar } from "react-icons/fa"
-import TopProductData from "../TopProducts/TopProductsData"
+import TopProductData from "./TopProductsData"
 import PropTypes from 'prop-types'
 
 

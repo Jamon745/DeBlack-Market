@@ -1,6 +1,6 @@
 import { FaStar } from "react-icons/fa"
-import TopSelling from "../TopProducts/TopSelling"
-import Hero from "../Hero/Hero"
+import TopSelling from "../../../Components/Pages/TopProducts/TopSelling"
+import Hero from "../../Hero/Hero"
 
 const Home = () => {
   return (
