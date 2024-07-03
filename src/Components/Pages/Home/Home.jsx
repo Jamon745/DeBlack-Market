@@ -1,8 +1,15 @@
 import { FaStar } from "react-icons/fa"
 import TopSelling from "../../../Components/Pages/TopProducts/TopSelling"
 import Hero from "../../Hero/Hero"
+import { useNavigate } from "react-router-dom"
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleClick = (e) =>{
+    e.preventDefault();
+    navigate("/products")
+  };
   return (
       <div className="mt-14 mb-12">
             <Hero />
@@ -35,8 +42,10 @@ const Home = () => {
                       </div>
                     ))}
                   </div>
+
+                  {/* Link to all the products */}
                   <div data-aos="zoom-in" className="flex items-center text-center place-content-center">
-                    <a href={"/products"} className="bg-gradient-to-r from-primary to-gray-800 text-center text-white px-2 py-1 mt-10n rounded-md dark:text-white hover:text-primary cursor-pointer">View All</a>
+                    <button onClick={handleClick} className="bg-gradient-to-r from-primary to-gray-800 text-center text-white px-2 py-1 mt-10n rounded-md dark:text-white hover:text-primary cursor-pointer">View All</button>
                   </div>
             </div>
       </div>

@@ -5,10 +5,27 @@ import { IoMdSearch } from 'react-icons/io';
 import DarkMode from './DarkMode';
 import {NavData} from './NavData'; 
 import {DropdownLinks} from './DropdownLinks'; 
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Navbar = ({ handleOrderPopup }) => {
+  const navigate = useNavigate();
+
+  const navigateHome = (e) => {
+    e.preventDefault();
+    navigate("/")
+  }
+
+  const navigateProducts = (e) => {
+    e.preventDefault();
+    navigate("/products")
+  }
+
+  const navigateFoods = (e) => {
+    e.preventDefault();
+    navigate("/foods")
+  }
 
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
@@ -48,20 +65,20 @@ const Navbar = ({ handleOrderPopup }) => {
       </div>
       {/* Lower Navbar */}
       <div className="flex justify-center flex-end">
-        <ul className="sm:flex hidden items-center gap-4">
-          <li>
-            <a className='px-2 hover:translate-x-1 duration-300 hover:text-primary' href="/">Home</a>
-          </li>
-          <li>
-          <a href={"/products"} className="flex items-center hover:text-primary gap-2 py-2">
+        <div className="sm:flex hidden items-center gap-4">
+          
+            <button onClick={navigateHome} className='px-2 hover:translate-x-1 duration-300 hover:text-primary'>Home</button>
+          
+          
+          <button onClick={navigateProducts} className="flex items-center hover:text-primary gap-2 py-2">
               Products
-            </a>
-          </li>
-          <li>
-          <a href={"/foods"} className="flex items-center hover:text-primary gap-2 py-2">
+            </button>
+          
+          
+          <button onClick={navigateFoods} className="flex items-center hover:text-primary gap-2 py-2">
               Food & Beverages
-            </a>
-          </li>
+            </button>
+          
 
           <li className="group relative cursor-pointer">
           <div className="flex items-center gap-2 py-2">
@@ -104,7 +121,7 @@ const Navbar = ({ handleOrderPopup }) => {
             <a href={'/login'} className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white ml-20">Login</a>
             <a href={'/signUp'} className="hover:text-primary cursor-pointer rounded-md px-2 bg-gradient-to-r from-primary to-gray-800 transition-all duration-200 text-white">Register</a>
           </li>
-        </ul>
+        </div>
       </div>
     </div>
   );

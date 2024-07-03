@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       offset: 100,
-      duration: 500,
+      duration: 400,
       easing: 'ease-in-out',
       delay: 50,
     });
@@ -50,7 +50,7 @@ function App() {
           <Route path='/login' element={<Login />}/>
           <Route path='/signUp' element={<SignUp />}/>
           <Route path='/cars' element={<Cars />}/>
-          {/* <Route path='/laptops' element={<Laptops />}/> */}
+          {/* <Route path='/laptops' element={<Laptops />}/>  */}
           <Route path='/' element={<SignUp />}/>
           <Route path='/foods' element={<Foods handleOrderPopup={handleOrderPopup} />}/>
           <Route path='/cars' element={<Cars handleOrderPopup={handleOrderPopup} />}/>
